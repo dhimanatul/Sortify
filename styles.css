@@ -1,0 +1,143 @@
+/* new.css */
+
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.nav-container {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Lobster', cursive;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar .options {
+  margin: 0 10px;
+}
+
+.navbar select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.navbar .start {
+  background-color: #ff5722;
+  border-radius: 5px;
+}
+
+.navbar .start:hover {
+  background-color: #e64a19;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+
+
+
+/* Center css */
+.center {
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Added shadow to make page border free */
+  height: 420px;
+  width: 410px;
+  max-height: 731px;
+}
+.array {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100%;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: row;
+}
+.cell {
+  display: flex;
+  align-items: flex-start;
+  flex: 0.5;
+  width: 0.000001%;
+  margin: 1px;
+  background-color: #d6d6d6;
+  resize: horizontal;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+.cell.done {
+  background-color: #9cec5b;
+  border-color: #9cec5b;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+.cell.visited {
+  border-color: #6184d8;
+  background-color: #6184d8;
+  color: white;
+  transition: 0.5s;
+}
+.cell.current {
+  border-color: #50c5b7;
+  background-color: #50c5b7;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+.cell.min {
+  background-color: #ff1493;
+  border-color: #ff1493;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 100px;
+}
+
+.footer p {
+  margin: 0;
+}
+.fa-heart {
+  color: red;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 600px) {
+  .navbar a, .navbar .options, .navbar .start {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .navbar .icon {
+    display: block;
+  }
+}
