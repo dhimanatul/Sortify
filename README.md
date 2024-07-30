@@ -1,3 +1,3 @@
 # Sortify
 
-By atul Dhiman
+By Atul Dhiman
